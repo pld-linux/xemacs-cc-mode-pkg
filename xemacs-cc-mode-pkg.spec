@@ -23,7 +23,7 @@ indentation and has several handy commands and some minor modes to
 make the editing easier. Note that CC Mode does _not_ provide
 font-locking; there are other Emacs packages for that.
 
-%description -l pl 
+%description -l pl
 CC mode to Emacsowy tryb przeznaczony od edycji programó³ w jêzyku C i
 innych jêzykach o podobnej sk³adni: C++, Objective-C, CORBA IDL, Pike.
 (Dla Javy stworzono osobny pakiet: "jde").
@@ -43,7 +43,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf lisp/cc-mode/ChangeLog 
+gzip -9nf lisp/cc-mode/ChangeLog
 
 %clean
 rm -fr $RPM_BUILD_ROOT
