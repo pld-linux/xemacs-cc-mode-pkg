@@ -14,7 +14,7 @@ Requires:	xemacs
 Requires:	xemacs-base-pkg
 Prereq:		/usr/sbin/fix-info-dir
 BuildArch:	noarch
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Conflicts:	xemacs-sumo
 
 %description
@@ -25,7 +25,6 @@ editing easier. Note that CC Mode does _not_ provide font-locking; there
 are other Emacs packages for that.
 
 %description -l pl 
-
 
 %prep
 %setup -q -c
