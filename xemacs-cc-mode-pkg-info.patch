@@ -1,5 +1,5 @@
---- man/cc-mode/cc-mode.texi.orig	Sun Feb 25 07:39:27 2001
-+++ man/cc-mode/cc-mode.texi	Thu Jul 12 13:08:18 2001
+--- xemacs-cc-mode-pkg/man/cc-mode/cc-mode.texi.orig	Sun Feb 25 07:39:27 2001
++++ xemacs-cc-mode-pkg/man/cc-mode/cc-mode.texi	Thu Jul 12 13:08:18 2001
 @@ -7,7 +7,7 @@
  @comment No overfull hbox marks in the dvi file.
  @finalout
