@@ -9,7 +9,7 @@ Summary(pl):	C, C++ and Java language support.
 
 Name:    	xemacs-cc-mode-pkg
 %define 	srcname	cc-mode
-Version: 	1.16
+Version: 	1.17
 Release:	1
 
 ### Preamble
@@ -23,30 +23,13 @@ BuildArch:	noarch
 Conflicts:	xemacs-sumo
 Requires: 	xemacs
 Requires: 	xemacs-base-pkg
+Prereq:  	/usr/sbin/fix-info-dir
 ### EndPreamble
 
 %description
 
 
 %description -l pl 
-
-
-%package el
-Summary: 	C, C++ and Java language support. This package contains .el files
-Summary(pl):	C, C++ and Java language support. Pliki ¿ród³owe .el
-
-### ElPreamble
-Group:    	Applications/Editors/Emacs
-Group(pl):	Aplikacje/Edytory/Emacs
-Requires: 	%{name} = %{version}
-### EndElPreamble
-
-
-%description el
-.el source files -- not necessary to run XEmacs
-
-%description el -l pl
-Pliki ¼ród³owe procedur w eLispie do XEmacsa.
 
 
 ### Main
@@ -60,7 +43,8 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 install -d $RPM_BUILD_ROOT%{_infodir}
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
-gzip -9nf $RPM_BUILD_ROOT%{_infodir}/*.info
+gzip -9nf $RPM_BUILD_ROOT%{_infodir}/*.info*
+gzip -9nf lisp/cc-mode/ChangeLog 
 
 %clean
 rm -fr $RPM_BUILD_ROOT
@@ -76,6 +60,9 @@ rm -fr $RPM_BUILD_ROOT
 
 ### Files
 %files
+%defattr(644,root,root,755)
 %{_infodir}/*
-%{_datadir}/xemacs-packages/lisp/*
+%dir %{_datadir}/xemacs-packages/lisp/*
+%{_datadir}/xemacs-packages/lisp/*/*.elc
+%doc lisp/cc-mode/ChangeLog.gz 
 ### EndFiles
