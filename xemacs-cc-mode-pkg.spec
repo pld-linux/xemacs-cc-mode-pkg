@@ -6,14 +6,6 @@ Version:	1.27
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
-Group(cs):	Aplikace/Editory/Emacs
-Group(de):	Anwendungen/Editoren/Emacs
-Group(es):	Aplicaciones/Editores/Emacs
-Group(fr):	Applications/Editeurs/Emacs
-Group(ja):	•¢•◊•Í•±°º•∑•Á•Û/•®•«•£•ø/Emacs
-Group(pl):	Aplikacje/Edytory/Emacs
-Group(pt):	AplicaÁıes/Editores/Emacs
-Group(ru):	“…Ãœ÷≈Œ…—/Ú≈ƒ¡À‘œ“Ÿ/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
 Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
