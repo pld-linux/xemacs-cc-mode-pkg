@@ -1,6 +1,6 @@
---- xemacs-cc-mode-pkg/man/cc-mode/cc-mode.texi.orig	Sun Feb 25 07:39:27 2001
-+++ xemacs-cc-mode-pkg/man/cc-mode/cc-mode.texi	Thu Jul 12 13:08:18 2001
-@@ -7,7 +7,7 @@
+--- xemacs-cc-mode-pkg-1.41/man/cc-mode/cc-mode.texi.orig	2003-09-24 16:09:41.000000000 +0200
++++ xemacs-cc-mode-pkg-1.41/man/cc-mode/cc-mode.texi	2003-11-26 18:53:01.000000000 +0100
+@@ -30,7 +30,7 @@
  @comment No overfull hbox marks in the dvi file.
  @finalout
  
@@ -9,7 +9,7 @@
  @settitle     CC Mode Manual
  @footnotestyle end
  
-@@ -37,10 +37,11 @@
+@@ -67,10 +67,11 @@
  
  @comment Info directory entry for use by install-info. The indentation
  @comment here is by request from the FSF folks.
@@ -17,10 +17,10 @@
 +@dircategory XEmacs Editor:
  @direntry
 -* CC Mode: (cc-mode).   Emacs mode for editing C, C++, Objective-C,
--                          Java, Pike, and IDL code.
-+* CC-mode: (cc-mode).			Emacs mode for editing C, C++,
-+					Objective-C, Java, Pike, and IDL
-+					code
+-                        Java, Pike, AWK, and CORBA IDL code.
++* CC-mode: (cc-mode).                 Emacs mode for editing C, C++,
++                                      Objective-C, Java, Pike, and IDL
++                                      code
  @end direntry
  
  @comment !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
