@@ -45,8 +45,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf $RPM_BUILD_ROOT%{_infodir}/*.info* \
-	lisp/cc-mode/ChangeLog 
+gzip -9nf lisp/cc-mode/ChangeLog 
 
 %clean
 rm -fr $RPM_BUILD_ROOT
