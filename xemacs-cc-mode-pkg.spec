@@ -3,7 +3,7 @@ Summary(pl):	Tryby dla C, C++ i Javy
 Name:		xemacs-cc-mode-pkg
 %define 	srcname	cc-mode
 Version:	1.26
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Editors/Emacs
 Group(de):	Applikationen/Editors/Emacs
