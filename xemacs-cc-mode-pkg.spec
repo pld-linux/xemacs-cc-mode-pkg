@@ -1,5 +1,5 @@
 Summary:	C, C++ and Java language support
-Summary(pl):	C, C++ and Java language support
+Summary(pl):	Tryby dla C, C++ i Javy
 Name:		xemacs-cc-mode-pkg
 %define 	srcname	cc-mode
 Version:	1.17
@@ -25,6 +25,9 @@ editing easier. Note that CC Mode does _not_ provide font-locking; there
 are other Emacs packages for that.
 
 %description -l pl 
+CC mode to Emacsowy tryb przeznaczony od edycji programó³ w jêzyku C i innych 
+jêzykach o podobnej sk³adni:  C++, Objective-C, CORBA IDL, Pike. (Dla Javy
+stworzono osobny pakiet: "jde").
 
 %prep
 %setup -q -c
