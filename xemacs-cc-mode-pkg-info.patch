@@ -1,106 +1,26 @@
-diff -Nur xemacs-cc-mode-pkg-1.17/man/cc-mode/cc-mode.texi xemacs-cc-mode-pkg-1.17.new/man/cc-mode/cc-mode.texi
---- xemacs-cc-mode-pkg-1.17/man/cc-mode/cc-mode.texi	Thu Dec 31 09:20:20 1998
-+++ xemacs-cc-mode-pkg-1.17.new/man/cc-mode/cc-mode.texi	Sun Mar 26 21:34:55 2000
-@@ -4,10 +4,20 @@
- @comment %**start of header (This is for running Texinfo on a region)
- @comment !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+--- man/cc-mode/cc-mode.texi.orig	Sun Feb 25 07:39:27 2001
++++ man/cc-mode/cc-mode.texi	Thu Jul 12 13:08:18 2001
+@@ -7,7 +7,7 @@
+ @comment No overfull hbox marks in the dvi file.
+ @finalout
  
 -@setfilename  cc-mode.info
 +@setfilename  ../../info/cc-mode.info
- @settitle     CC MODE Version 5 Documentation
+ @settitle     CC Mode Manual
  @footnotestyle end
  
-+@ifinfo
-+@format
+@@ -37,10 +37,11 @@
+ 
+ @comment Info directory entry for use by install-info. The indentation
+ @comment here is by request from the FSF folks.
+-@dircategory Emacs
 +@dircategory XEmacs Editor:
-+@direntry
-+* CC-mode: (cc-mode).			A GNU Emacs mode for editing C and C-like languages
-+@end direntry
-+@end format
-+@end ifinfo
-+
-+
+ @direntry
+-* CC Mode: (cc-mode).   Emacs mode for editing C, C++, Objective-C,
+-                          Java, Pike, and IDL code.
++* CC-mode: (cc-mode).			Emacs mode for editing C, C++,
++					Objective-C, Java, Pike, and IDL
++					code
+ @end direntry
+ 
  @comment !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
- @comment @setchapternewpage odd !! we don't want blank pages !!
- @comment %**end of header (This is for running Texinfo on a region)
-@@ -732,7 +742,7 @@
- @samp{([}, @samp{])}, and @samp{(<}, @samp{>)}, do not count as brace
- lists in this regard, even though they do for normal indentation
- purposes.  It's currently not possible to set automatic newlines on
--these constructs.}.  @xref{Syntactic Symbols} for a more detailed
-+these constructs.}.  @xref{Syntactic Symbols}, for a more detailed
- description of these syntactic symbols, except for
- @code{inexpr-class-open} and @code{inexpr-class-close}, which aren't
- actual syntactic symbols.
-@@ -747,7 +757,7 @@
- @cindex Custom Indentation Functions
- The value associated with each syntactic symbol in this association list
- is called an @var{ACTION} which can be either a function or a list.
--@xref{Custom Brace and Colon Hanging} for a more detailed discussion of
-+@xref{Custom Brace and Colon Hanging}, for a more detailed discussion of
- using a function as a brace hanging @var{ACTION}.
- 
- When the @var{ACTION} is a list, it can contain any combination of the
-@@ -803,7 +813,7 @@
- introducing braces, such as @code{class-open} or @code{defun-open}.
- Emacs makes an assumption that such braces will always appear in column
- zero, hanging such braces can introduce performance problems.
--@xref{Performance Issues} for more information.
-+@xref{Performance Issues}, for more information.
- 
- 
- @comment !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-@@ -829,7 +839,7 @@
- In C++, double-colons are used as a scope operator but because these
- colons always appear right next to each other, newlines before and after
- them are controlled by a different mechanism, called @dfn{clean-ups} in
--@ccmode{}.  @xref{Clean-ups} for details.
-+@ccmode{}.  @xref{Clean-ups}, for details.
- 
- 
- @comment !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-@@ -844,7 +854,7 @@
- these characters do not correspond directly to syntactic symbols, a
- different mechanism is used to determine whether newlines should be
- automatically inserted after these characters.  @xref{Customizing
--Semi-colons and Commas} for details.
-+Semi-colons and Commas}, for details.
- 
- 
- @comment !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-@@ -1547,7 +1557,7 @@
- function call programmatically!}.  You can set up @emph{styles} of
- indentation, which are groupings of syntactic symbol offsets and other
- variable values.  Most likely, you'll find that one of the pre-defined
--styles will suit your needs.  @xref{Styles} for an
-+styles will suit your needs.  @xref{Styles}, for an
- explanation of how to set up named styles.
- 
- @cindex c-basic-offset
-@@ -1840,7 +1850,7 @@
- file to make the changes described in the previous section
- more permanent.  See the Emacs manuals
- for more information on customizing Emacs via hooks.  @xref{Sample
--.emacs File} for a more complete sample @file{.emacs} file.
-+.emacs File}, for a more complete sample @file{.emacs} file.
- @example
- @group
- 
-@@ -1869,7 +1879,7 @@
- Any time you make @ccmode{} customizations at the top-level of your
- @file{.emacs} file, either through the use of @code{setq}'s or as above,
- or when you use the Custom interface, you will need to include the first
--line.  @xref{Built-in Styles} for details.
-+line.  @xref{Built-in Styles}, for details.
- 
- For complex customizations, you will probably want to set up a
- @emph{style} that groups all your customizations under a single
-@@ -1971,7 +1981,7 @@
- these settings will be captured in the @code{user} style.  Also, all
- other styles implicitly inherit their settings from @code{user} style.
- This means that for any styles you add via @code{c-add-style}
--(@xref{Adding Styles}) you need only define the differences between your
-+(@xref{Adding Styles},) you need only define the differences between your
- new style and @code{user} style.
- 
- Note however that @code{user} style is @emph{not} the default style.
