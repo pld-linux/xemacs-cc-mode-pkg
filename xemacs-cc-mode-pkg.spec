@@ -2,7 +2,7 @@ Summary:	C, C++ and Java language support
 Summary(pl):	Tryby dla C, C++ i Javy
 Name:		xemacs-cc-mode-pkg
 %define 	srcname	cc-mode
-Version:	1.28
+Version:	1.29
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
