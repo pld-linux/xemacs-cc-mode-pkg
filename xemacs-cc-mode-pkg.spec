@@ -19,14 +19,14 @@ Conflicts:	xemacs-sumo
 %description
 CC Mode is a GNU Emacs mode for editing files containing C, C++,
 Objective-C, Java, CORBA IDL, and Pike code. It provides syntax-based
-indentation and has several handy commands and some minor modes to make the
-editing easier. Note that CC Mode does _not_ provide font-locking; there
-are other Emacs packages for that.
+indentation and has several handy commands and some minor modes to
+make the editing easier. Note that CC Mode does _not_ provide
+font-locking; there are other Emacs packages for that.
 
 %description -l pl 
 CC mode to Emacsowy tryb przeznaczony od edycji programó³ w jêzyku C i
-innych jêzykach o podobnej sk³adni: C++, Objective-C, CORBA IDL, Pike. (Dla
-Javy stworzono osobny pakiet: "jde").
+innych jêzykach o podobnej sk³adni: C++, Objective-C, CORBA IDL, Pike.
+(Dla Javy stworzono osobny pakiet: "jde").
 
 %prep
 %setup -q -c
