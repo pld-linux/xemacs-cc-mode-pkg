@@ -20,7 +20,7 @@ Conflicts:	xemacs-sumo
 CC Mode is a GNU Emacs mode for editing files containing C, C++,
 Objective-C, Java, CORBA IDL, and Pike code. It provides syntax-based
 indentation and has several handy commands and some minor modes to
-%{__make} the editing easier. Note that CC Mode does _not_ provide
+make the editing easier. Note that CC Mode does _not_ provide
 font-locking; there are other Emacs packages for that.
 
 %description -l pl 
