@@ -4,11 +4,14 @@ Name:		xemacs-cc-mode-pkg
 %define 	srcname	cc-mode
 Version:	1.17
 Release:	1
+
+Patch0: 	xemacs-cc-mode-pkg-info.patch
+
+### Preamble
 License:	GPL
-Group:		Applications/Editors/Emacs
+Group:    	Applications/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 Source0:	ftp://ftp.xemacs.org/packages/%{srcname}-%{version}-pkg.tar.gz
-Patch0:		xemacs-cc-mode-pkg-info.patch
 URL:		http://www.xemacs.org/
 Requires:	xemacs
 Requires:	xemacs-base-pkg
@@ -16,6 +19,8 @@ Prereq:		/usr/sbin/fix-info-dir
 BuildArch:	noarch
 BuildRoot:	/tmp/%{name}-%{version}-root
 Conflicts:	xemacs-sumo
+### EndPreamble
+
 
 %description
 CC Mode is a GNU Emacs mode for editing files containing C, C++,
@@ -26,10 +31,13 @@ other Emacs packages for that.
 
 %description -l pl 
 
-
+### Main
 %prep
 %setup -q -c
-$patch0 -p1
+%patch0 -p1
+
+%build
+(cd man/cc-mode; awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo)
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -44,16 +52,21 @@ gzip -9nf $RPM_BUILD_ROOT%{_infodir}/*.info* \
 
 %clean
 rm -fr $RPM_BUILD_ROOT
+### EndMain
 
+### PrePost
 %post
 %{_sbindir}/fix-info-dir -c %{_infodir} >/dev/null 2>&1
 
 %postun
 %{_sbindir}/fix-info-dir -c %{_infodir} >/dev/null 2>&1
+### EndPrePost
 
+### Files
 %files
 %defattr(644,root,root,755)
 %doc lisp/cc-mode/ChangeLog.gz
 %{_infodir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.elc
+### EndFiles
