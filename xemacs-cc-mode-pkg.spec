@@ -2,7 +2,7 @@ Summary:	C, C++ and Java language support
 Summary(pl):	Tryby dla C, C++ i Javy
 Name:		xemacs-cc-mode-pkg
 %define 	srcname	cc-mode
-Version:	1.17
+Version:	1.21
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
@@ -30,7 +30,7 @@ innych jêzykach o podobnej sk³adni: C++, Objective-C, CORBA IDL, Pike.
 
 %prep
 %setup -q -c
-%patch0 -p1
+#%patch0 -p1
 
 %build
 (cd man/cc-mode; awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo)
