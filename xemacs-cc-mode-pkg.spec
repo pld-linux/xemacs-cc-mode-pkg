@@ -25,9 +25,9 @@ editing easier. Note that CC Mode does _not_ provide font-locking; there
 are other Emacs packages for that.
 
 %description -l pl 
-CC mode to Emacsowy tryb przeznaczony od edycji programó³ w jêzyku C i innych 
-jêzykach o podobnej sk³adni:  C++, Objective-C, CORBA IDL, Pike. (Dla Javy
-stworzono osobny pakiet: "jde").
+CC mode to Emacsowy tryb przeznaczony od edycji programó³ w jêzyku C i
+innych jêzykach o podobnej sk³adni: C++, Objective-C, CORBA IDL, Pike. (Dla
+Javy stworzono osobny pakiet: "jde").
 
 %prep
 %setup -q -c
