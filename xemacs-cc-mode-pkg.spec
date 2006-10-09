@@ -2,12 +2,12 @@ Summary:	C, C++ and Java language support
 Summary(pl):	Tryby dla C, C++ i Javy
 Name:		xemacs-cc-mode-pkg
 %define 	srcname	cc-mode
-Version:	1.41
-Release:	2
+Version:	1.45
+Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-# Source0-md5:	31b9f8e38d95e6b5dd079c14f88ef360
+# Source0-md5:	e1a2e251e57f29ce6e082181c13c7f04
 Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
 BuildRequires:	texinfo
