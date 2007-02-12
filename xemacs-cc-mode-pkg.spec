@@ -1,5 +1,5 @@
 Summary:	C, C++ and Java language support
-Summary(pl.UTF-8):   Tryby dla C, C++ i Javy
+Summary(pl.UTF-8):	Tryby dla C, C++ i Javy
 Name:		xemacs-cc-mode-pkg
 %define 	srcname	cc-mode
 Version:	1.45
