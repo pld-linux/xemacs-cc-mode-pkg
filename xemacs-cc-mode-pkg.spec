@@ -59,6 +59,6 @@ rm -fr $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc lisp/cc-mode/ChangeLog
-%{_infodir}/*
+%{_infodir}/*.info*
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.el*
