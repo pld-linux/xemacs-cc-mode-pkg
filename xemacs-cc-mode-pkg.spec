@@ -31,7 +31,7 @@ innych językach o podobnej składni: C++, Objective-C, CORBA IDL, Pike.
 
 %prep
 %setup -q -c
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 (cd man/cc-mode; awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo)
